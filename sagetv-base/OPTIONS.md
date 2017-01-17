@@ -18,10 +18,10 @@
 `Y/N` Install commandIR tools to using commandIR to tune STB.  It appears the CommandIR is no longer in business.
 
 ### PUID
-Numeric USERID of SageTV instance.  Default `99`.  This should be the real userid on the host system.
+Numeric USERID of SageTV instance.  Default `911`.  This should be the real userid on the host system.
 
 ### PGID
-Numeric GROUPID of SageTV instance. Default `100`.  This should be the real groupid on the host system.
+Numeric GROUPID of SageTV instance. Default `911`.  This should be the real groupid on the host system.
 
 ### VIDEO_GUID
 Numeric GROUPID of the `video` group that owns the /dev/video0 device on the host system.  Default `18`.  This should be the real group id on the host system.
