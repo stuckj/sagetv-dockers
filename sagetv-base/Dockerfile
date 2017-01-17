@@ -15,9 +15,11 @@ RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
+ENV PUID 99
+ENV PGID 100
 
 # add sagetv user and group
-RUN useradd -u 911 -U -d /opt/sagetv -s /bin/bash -G video sagetv
+RUN useradd -u ${PUID} -U -d /opt/sagetv -s /bin/bash -g ${PGID} -G video sagetv
 
 # Speed up APT
 RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup \
