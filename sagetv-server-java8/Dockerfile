@@ -1,7 +1,7 @@
 # BUILDING
 # docker build -t stuckless/sagetv-server-java8:latest .
 
-FROM stuckless/sagetv-base:latest
+FROM stuckj/sagetv-base:latest
 
 MAINTAINER Sean Stuckless <sean.stuckless@gmail.com>
 
